@@ -1,1 +1,3 @@
-# template-docs-simple
+# template-dotnet-library
+simple dotnet library template
+
