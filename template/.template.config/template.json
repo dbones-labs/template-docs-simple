@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "dbones labs",
+  "classifications": [
+    "dotnet",
+    "library"
+  ],
+  "identity": "DBones.Template.Docs.Simple",
+  "name": "simple template for creating a dotnet library",
+  "shortName": "dbones-net-lib",
+  "sourceName": "",
+
+  "symbols": {
+    "organisation-name": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "organisation-name",
+      "defaultValue": ""
+    },
+    "project-name": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "project-name",
+      "defaultValue": ""
+    }
+  }
+}
