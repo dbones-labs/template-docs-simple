@@ -8,7 +8,7 @@
   "identity": "DBones.Template.Docs.Simple",
   "name": "simple template for creating a dotnet library",
   "shortName": "simple-doc",
-  "sourceName": "",
+  "sourceName": "simpledoc",
 
   "symbols": {
     "organisation-name": {
