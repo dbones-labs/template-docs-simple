@@ -43,7 +43,7 @@ jobs:
             export SEMVER_NUGET_SFX=$(cat ./semver/nuget-sfx.txt)
             echo $SEMVER_NUGET_SFX
 
-            dotnet pack --no-build --no-dependencies --no-restore --force -p:Version=$APP_VERSION
+            dotnet pack Template.proj --no-build --no-dependencies --no-restore --force -p:Version=$APP_VERSION
 
             mkdir ./nupkgs
             mv **/bin/**/*.nupkg ./nupkgs
