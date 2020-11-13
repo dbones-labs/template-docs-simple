@@ -2,12 +2,12 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "dbones labs",
   "classifications": [
-    "dotnet",
-    "library"
+    "docs",
+    "simple"
   ],
   "identity": "DBones.Template.Docs.Simple",
   "name": "simple template for creating a dotnet library",
-  "shortName": "dbones-net-lib",
+  "shortName": "simple-doc",
   "sourceName": "",
 
   "symbols": {
