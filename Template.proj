@@ -10,6 +10,7 @@
     <PackageTags>dotnet-new;templates;docs;simple;Github-pages</PackageTags>
     <TargetFramework>netstandard2.0</TargetFramework>
 
+    <IsPackable>true</IsPackable>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
