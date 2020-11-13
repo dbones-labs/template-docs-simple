@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0</PackageVersion>
     <PackageId>DBones.Template.Docs.Simple</PackageId>
     <Title>Simple Docs in Github</Title>
     <Authors>dbones</Authors>
@@ -14,6 +13,10 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
