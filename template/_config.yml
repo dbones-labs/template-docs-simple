@@ -75,10 +75,3 @@ analytics:
   google: 
 
 # Build settings
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - project-name.gemspec
-  - LICENSE.md
-  - README.md
-  - screenshot.png
