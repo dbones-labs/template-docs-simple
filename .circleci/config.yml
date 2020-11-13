@@ -50,7 +50,7 @@ jobs:
             dotnet pack Template.proj --no-build --no-dependencies --no-restore --force -p:Version=$APP_VERSION
 
             mkdir ./../nupkgs
-            mv **/bin/**/*.nupkg ./../nupkgs
+            mv ./bin/**/*.nupkg ./../nupkgs
 
             cd ./../nupkgs
             rm *.symbols.nupkg
