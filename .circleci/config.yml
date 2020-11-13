@@ -46,7 +46,8 @@ jobs:
             cd ./src
             ls
 
-            dotnet pack Template.proj --no-build --no-dependencies --force -p:Version=$APP_VERSION
+            dotnet restore Template.proj
+            dotnet pack Template.proj --no-build --no-dependencies --no-restore --force -p:Version=$APP_VERSION
 
             mkdir ./../nupkgs
             mv **/bin/**/*.nupkg ./../nupkgs
