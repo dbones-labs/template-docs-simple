@@ -7,8 +7,9 @@
     <Authors>dbones</Authors>
     <Description>Simple Github docs for our repos, which utilise Github pages.</Description>
     <PackageTags>dotnet-new;templates;docs;simple;Github-pages</PackageTags>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <RepositoryUrl>https://github.com/dbones-labs/template-docs-simple</RepositoryUrl>
 
+    <TargetFramework>netstandard2.0</TargetFramework>
     <IsPackable>true</IsPackable>
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
