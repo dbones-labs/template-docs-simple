@@ -1,9 +1,9 @@
 # template-docs-simple
 
-[![release](https://img.shields.io/github/v/release/dbones-labs/template-docs-simple?logo=nuget)](https://github.com/dbones-labs/template-docs-simple/releases) [![Nuget](https://img.shields.io/badge/nuget-template-docs-simple-blue)](https://github.com/orgs/dbones-labs/packages?repo_name=template-docs-simple)
-[![docs](https://img.shields.io/badge/docs-template-docs-simple-blue)](https://dbones-labs.github.io/template-docs-simple/)
+[![release](https://img.shields.io/github/v/release/dbones-labs/template-docs-simple?logo=nuget)](https://github.com/dbones-labs/template-docs-simple/releases) [![Nuget](https://img.shields.io/badge/nuget-template--docs--simple-blue)](https://github.com/orgs/dbones-labs/packages?repo_name=template-docs-simple)
+[![docs](https://img.shields.io/badge/docs-template--docs--simple-blue)](https://dbones-labs.github.io/template-docs-simple/)
 
-[![dbones-labs](https://circleci.com/gh/dbones-labs/template-docs-simple.svg?style=shield)](https://app.circleci.com/pipelines/github/dbones-labs/template-docs-simple)
+[![dbones-labs](https://circleci.com/gh/dbones-labs/template--docs--simple.svg?style=shield)](https://app.circleci.com/pipelines/github/dbones-labs/template-docs-simple)
 
 
 This is for simple docs
@@ -19,7 +19,7 @@ For small projects consider using this template for the documentation.
 
 you can find all packages here:
 
-[![Nuget](https://img.shields.io/badge/nuget-template-docs-simple-blue)](https://github.com/orgs/dbones-labs/packages?repo_name=template-docs-simple)
+[![Nuget](https://img.shields.io/badge/nuget-template--docs--simple-blue)](https://github.com/orgs/dbones-labs/packages?repo_name=template-docs-simple)
 
 
 ## Major releases
@@ -39,7 +39,7 @@ We use a variant of Githubflow, so all feature branches have their own pre-relea
 
 check out our docs for examples and more information
 
-[![docs](https://img.shields.io/badge/docs-template-docs-simple-blue)](https://dbones-labs.github.io/template-docs-simple/)
+[![docs](https://img.shields.io/badge/docs-template--docs--simple-blue)](https://dbones-labs.github.io/template-docs-simple/)
 
 ## Use of this library
 
