@@ -10,6 +10,8 @@ jobs:
       - run:
           name: version
           command: |
+            echo branch:
+            git branch --show-current
             mkdir semver
             dotnet-gitversion
             dotnet-gitversion | jq '.SemVer' > ./semver/full.txt
