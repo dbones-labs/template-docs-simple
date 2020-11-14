@@ -80,20 +80,6 @@ jobs:
 workflows:
   version: 2
   
-  release:
-    jobs:
-      - setup:
-          filters:
-            tags:
-              only: /^v?\d\.\d\.\d/
-      - build:
-          requires:
-            - setup
-      - publish:
-          context: build-ctx
-          requires:
-            - build
-  
   build_and_publish:
     jobs:
       - setup:
@@ -101,6 +87,8 @@ workflows:
             branches:
               ignore:
                 - docs
+            tags:
+              only: /^v?\d\.\d\.\d/
       - build:
           requires:
             - setup
