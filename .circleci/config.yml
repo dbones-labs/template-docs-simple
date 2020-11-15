@@ -24,13 +24,13 @@ jobs:
             
             cp ./semver/nuget.txt ./semver/version.txt
             
-            if [[ $BRANCH == "\"(no branch)\"" ]]; 
+            if [[ $BRANCH == "\"(no branch)\"" ]]
             then 
-              echo "tagged release";
-              export V=\"$(git describe --tags --abbrev=0)\"
-              echo $V
-              echo $V > ./semver/version.txt
-            fi;
+                echo "tagged release"
+                export V=\"$(git describe --tags --abbrev=0)\"
+                echo $V
+                echo $V > ./semver/version.txt
+            fi
 
             cat ./semver/version.txt
             
