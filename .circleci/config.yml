@@ -47,7 +47,7 @@ jobs:
             
             ls
             ls ./semver
-            APP_VERSION=$(cat ./semver/nuget.txt)
+            APP_VERSION=$(cat ./semver/version.txt)
             echo $APP_VERSION
 
             cd ./src
