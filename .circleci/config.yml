@@ -22,7 +22,7 @@ jobs:
             export BRANCH=$(cat ./semver/branch.txt)
             echo $BRANCH
             
-            if [ $BRANCH == "\"(no branch)\"" ]; then echo "tagged release"; cp ./semver/mmp.txt ./semver/version.txt; else echo "patch/feature relase"; cp ./semver/nuget.txt ./semver/version.txt; fi;
+            if [[ $BRANCH == "\"(no branch)\"" ]]; then echo "tagged release"; cp ./semver/mmp.txt ./semver/version.txt; else echo "patch/feature relase"; cp ./semver/nuget.txt ./semver/version.txt; fi;
 
             cat ./semver/version.txt
             
