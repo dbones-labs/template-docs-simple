@@ -14,10 +14,27 @@ jobs:
             git branch --show-current
             mkdir semver
             dotnet-gitversion
+            
+            dotnet-gitversion | jq '.BranchName' > ./semver/branch.txt
             dotnet-gitversion | jq '.SemVer' > ./semver/full.txt
             dotnet-gitversion | jq '.NuGetVersionV2' > ./semver/nuget.txt
             dotnet-gitversion | jq '.NuGetPreReleaseTagV2' > ./semver/nuget-sfx.txt
             dotnet-gitversion | jq '.MajorMinorPatch' > ./semver/mmp.txt
+            
+            export BRANCH=$(cat ./semver/branch.txt)
+            echo $BRANCH
+            
+            if [ $BRANCH == "\"(no branch)\"" ] 
+            then 
+              echo "tagged release"
+              cp ./semver/mmp.txt ./semver/version.txt
+            else 
+              echo "patch/feature relase"
+              cp ./semver/nuget.txt ./semver/version.txt
+            fi
+            
+            cat ./semver/version.txt
+            
             ls
             ls ./semver
 
@@ -41,9 +58,6 @@ jobs:
             ls ./semver
             APP_VERSION=$(cat ./semver/nuget.txt)
             echo $APP_VERSION
-
-            export SEMVER_NUGET_SFX=$(cat ./semver/nuget-sfx.txt)
-            echo $SEMVER_NUGET_SFX
 
             cd ./src
             ls
@@ -92,9 +106,15 @@ workflows:
             tags:
               only: /^v?\d\.\d\.\d/
       - build:
+          filters:
+            tags:
+              only: /^v?\d\.\d\.\d/
           requires:
             - setup
       - publish:
           context: build-ctx
+          filters:
+            tags:
+              only: /^v?\d\.\d\.\d/
           requires:
             - build
