@@ -22,15 +22,12 @@ jobs:
             export BRANCH=$(cat ./semver/branch.txt)
             echo $BRANCH
             
+            export V=\"$(git describe --tags --abbrev=0)\"
+            echo $V
+            
             cp ./semver/nuget.txt ./semver/version.txt
             
-            if [[ $BRANCH == "\"(no branch)\"" ]]
-            then 
-                echo "tagged release"
-                export V=\"$(git describe --tags --abbrev=0)\"
-                echo $V
-                echo $V > ./semver/version.txt
-            fi
+            if [[ $BRANCH == "\"(no branch)\"" ]]; then echo "tagged release"; echo $V > ./semver/version.txt; fi;
 
             cat ./semver/version.txt
             
